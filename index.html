@@ -1,33 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login_panel</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Fo Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            direction: rtl;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #FFD700;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: auto;
+            animation: rotate-logo 5s infinite linear;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px;
+            background: linear-gradient(to bottom, #FFD700, #FFA500);
+            color: black;
+            border-radius: 0 0 50px 50px;
+        }
+
+        .hero h2 {
+            font-size: 3.5em;
+            margin: 0;
+            animation: fadeIn 2s;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: black;
+            color: #FFD700;
+            text-decoration: none;
+            font-size: 1.5em;
+            border-radius: 25px;
+            animation: pulse 2s infinite;
+        }
+
+        .hero .btn:hover {
+            background-color: #333;
+        }
+
+        .sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .section {
+            background-color: #FFD700;
+            border: 1px solid black;
+            border-radius: 15px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 350px;
+            text-align: center;
+            animation: slideInUp 1s;
+        }
+
+        .section h3 {
+            color: black;
+            font-size: 2em;
+        }
+
+        footer {
+            background-color: black;
+            color: #FFD700;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px 15px 0 0;
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        p{
+            font-size: large;
+            color: red;
+        }
+    </style>
 </head>
 <body>
-<div class="login">
-    <img src="logo.png" alt="img">
-    <h1>تسجيل الدخول</h1>
-    <form id="loginForm">
-        <input id="username" type="text" placeholder="اسم المستخدم" required> 
-        <input id="password" type="password" placeholder="كلمة السر" required>
-        <br>
-        <a href="#">نسيت كلمة السر ؟</a>
-        <input id="loginButton" type="submit" value="تسجيل الدخول">
-        <input id="registerButton" type="submit" value="لا املك حساب">
-    </form>
-    <div class="texture"></div>
-    <div class="texture2"></div>
-    <div class="icons">
-        <img src="password_icon.png" alt="img">
-    </div>
-    <div class="icons2">
-        <img src="user_icon.png" alt="img">
-    </div>
-</div>
-<script src="javascript.js"></script>
+    <header>
+        <h1>الاطفال</h1>
+    </header>
+
+    <section class="hero">
+        <h2>مرحبًا بك في موقع لبيع اطفال انوار اعراب</h2>
+        <p>يمكنك فحص جميع اطفاله وعزل احسنهم</p>
+        <a href="#" class="btn">اشتري الان بدون ضمان ! </a>
+    </section>
+
+    <section class="sections">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fo Shop. جميع الحقوق محفوظة.</p>
+    </footer>
 </body>
 </html>
-
